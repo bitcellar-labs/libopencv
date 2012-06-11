@@ -27,7 +27,7 @@ ifeq ($(OPENCV_LIB_TYPE),SHARED)
 	OPENCV_3RDPARTY_COMPONENTS:=
 	OPENCV_EXTRA_COMPONENTS:=
 else
-	OPENCV_3RDPARTY_COMPONENTS:=tbb libjpeg libpng libtiff libjasper
+	OPENCV_3RDPARTY_COMPONENTS:= tbb jpeg zip png libtiff libjasper
 	OPENCV_EXTRA_COMPONENTS:=c log m dl z
 endif
 
