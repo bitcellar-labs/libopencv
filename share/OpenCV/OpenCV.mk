@@ -9,7 +9,7 @@ OPENCV_MK_DIR:=$(dir $(lastword $(MAKEFILE_LIST)))
 OPENCV_LIBS_DIR:=$(OPENCV_THIS_DIR)/../..
 OPENCV_BASEDIR:=
 OPENCV_LOCAL_C_INCLUDES:="$(LOCAL_PATH)/$(OPENCV_THIS_DIR)/../../include/opencv" "$(LOCAL_PATH)/$(OPENCV_THIS_DIR)/../../include"	
-OPENCV_MODULES:=contrib legacy ml stitching nonfree objdetect calib3d ts videostab photo video features2d highgui androidcamera flann imgproc core
+OPENCV_MODULES:=contrib legacy ml stitching nonfree objdetect calib3d ts videostab photo video features2d highgui flann imgproc core
 
 ifeq ($(OPENCV_LIB_TYPE),)
 	OPENCV_LIB_TYPE:=SHARED
